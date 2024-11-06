@@ -1,4 +1,10 @@
-# hugo-papermod-beginning
+---
+title: "关于本站" # 标题
+date: "2024-01-01T00:00:00+08:00" # 日期
+description: "如何使用本项目的教程" # 副标题
+tags: ["tutorial", "hugo", "github"] # 标签
+draft: false # 是否暂存为草稿
+---
 
 这个项目的目标，是向新手用户提供一个方案：单纯通过在网页点击，就可以在 github 上，发布自己的 blog。
 
@@ -8,4 +14,7 @@
 
 1. 注册并登入自己的 github 账号。
 
-2. 进入这个项目，点击 fork...
+2. 进入这个项目，点击 fork
+
+
+
