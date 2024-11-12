@@ -67,8 +67,8 @@ params:
   ShowLastMod: false #显示文章更新时间
 
   homeInfoParams:
-    Title: 加了个U
-    Content: 一定要换行吗？
+    Title: 确实很方便
+    Content: md也很轻
 
   profileMode:
     enabled: false
