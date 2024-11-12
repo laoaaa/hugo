@@ -1,11 +1,11 @@
 .page-header,
 .post-header {
-    margin: 18px auto var(--content-gap) auto;
+    margin: 24px auto var(--content-gap) auto;
 }
 
 .post-title {
     margin-bottom: 2px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .post-description {
