@@ -1,11 +1,119 @@
-# hugo-papermod-beginning
+### 简介
 
-这个项目的目标，是向新手用户提供一个方案：单纯通过在网页点击，就可以在 github 上，发布自己的 blog。
+如何在 github 上，用 hugo 架设自己的 blog？很多网上搜到的教程，都需要用户在自己的电脑上，安装运行各种 git 和 hugo 的相关命令，感觉对新手并不友好。所以，我试着写了一个流程，让新人完全只需要在网页浏览器上操作，就能快速生成自己的 blog 网站。
 
-很多关于在 github 创建 blog 的教程，都需要用户在自己的电脑上，安装运行 git 或者 hugo 的相关命令。感觉这样对新人还是不够友好，所以，我试着写一个，只需要在 github 网页上操作，就能快速生成自己 blog 的简易方案。
+这个项目本质上，就是搭好一个现成的 hugo 模板，让用户 fork 到自己的账户下，设置 github page 和 workflow 就能直接使用。对功能和界面有什么额外要求的话，请自行学习 hugo 的进阶教程。——然后你们就不是需要用这个项目的新人啦~
 
-### 操作步骤
+- 在 github 上建立的 blog，在墙内是不能直接访问的，需注意；
+- 本项目基于 [hugo](https://github.com/gohugoio/hugo) 博客引擎，和流行的 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题；
 
-1. 注册并登入自己的 github 账号。
+### 教程
 
-2. 进入这个项目，点击 fork...
+#### 创建 github 账号
+首先，注册自己的 github 账号，过程略。注册过程中，你设置的账户名 username，通常就是最终的网站地址 username.github.io，当然以后也可以把自己的域名映射到上面。
+
+架设自己的 blog 项目
+注册并登入账号后，进入项目：
+https://github.com/fivestone/hugo-papermod-beginning
+点击 Fork，将这个模板复制到你自己的账号下。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-01.jpg)
+
+点击 Fork 后，需要设置你自己的项目名称，假设你的 github 用户名为 username
+
+- 如果把项目命名为 username.github.io ，则最终的网站地址为
+https://username.github.io/
+- 如果把项目设置成其它名字，如 new-name，则最终的网站地址为
+https://username.github.io/new-name
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-02.jpg)
+
+点击 Create fork 创建新项目后，进入项目的 Settings – Pages 页面，把 Build and deployment – Source，改为 GitHub Actions。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-03.jpg)
+
+把 Source 从 Deploy from a branch，改为 GitHub Actions 后，进入上方的 Actions 页面。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-04.jpg)
+
+初次进入 Actions 页面，网页会提示，检测到已有的 workflow 配置文件，点击 I understand… 确认启动。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-05.jpg)
+
+在页面左边选择已有的 workflow，运行 Run workflow。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-06.jpg)
+
+然后就可以看到 workflow 正在运行，大约 1~2 分钟后，就可以在
+https://username.github.io 看到 blog 最初的页面了。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-08.jpg)
+
+#### 更改网站基本信息
+
+在 Code 页面，点击编辑 config.yml 页面，把一些预设的网站信息，改成你自己的信息。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-09.jpg)
+
+对新人来说，需要在 config.yml 文件里更改的，大概有以下几项：
+
+```
+baseURL: https://username.github.io/ # 改成你自己的网址
+title: 网站名称
+params:
+  author: somebody # 作者的署名
+
+  homeInfoParams:
+    Title: 网站标题，只显示在首页上
+    Content: >
+      显示在首页标题下方的一些文字。</br>
+      支持一些简单的 html 和 markdown。
+```
+
+更改后，点击绿色的 Commit Changes… 在弹出的页面中，再一次点击绿色的 Commit Changes，保存文件后 1~2 分钟，就可以在 blog 页面上，看到更改后的内容了。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-10.jpg)
+
+#### 添加、管理文章
+
+所有的 blog 文章，都在 content / posts 目录中。在 Code 页面，进入 content / posts 目录。点击右上角，创建新文件。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-11.jpg)
+
+所有的文章，均为 .md 结尾的 markdown 文件。文件名对应着这篇文章的网址，譬如，post-20241111.md 文章链接，就是
+https://username.github.io/posts/post-20241111/
+
+在文件的开头，如图所示，写入用 --- 隔开的，文章的标题和发布日期。在熟悉 hugo 的设置后，也可以在此处添加更多的文章信息和选项。
+
+```
+---
+title: "新文章的标题"
+date: "2024-11-11"
+---
+然后开始写正文，markdown 格式。
+```
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-12.jpg)
+
+同样，点击绿色的 Commit changes… 保存提交。1~2 分钟后，就可以在 blog 页面上看到新文章了。
+
+content / posts 目录里的所有文件，都可以随意地新增、删除、修改、重命名文件。对应着 blog 文章的增删改、和改变 url 链接。
+
+文章内嵌的图片，建议放在 static 目录下，然后在文章中用 markdown 格式引用。譬如 static / aa.jpg 文件，相应地在 markdown 文件中插入的代码为：
+
+```
+![](https://username.github.io/aa.jpg)
+```
+
+有经验的用户，也可以使用其它更有效的组织方式。
+
+#### 其它注意事项
+
+1. 生成的 blog 对应的 rss 订阅地址为
+```
+https://username.github.io/index.xml
+```
+
+2. 以后在使用这个 github 项目时，会一直看到，图片里这样的消息。——不用理会。
+
+![](https://blog.fivest.one/wp-content/uploads/20241111-14.jpg)
