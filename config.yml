@@ -1,5 +1,5 @@
-baseURL: https://laoaaa.github.io/hugo
-title: 加了个U
+baseURL: "https://laoaaa.github.io/hugo"
+title: "加了个U"
 theme: [PaperMod]
 languageCode: 'en'
 
@@ -71,7 +71,7 @@ params:
     Content: 一定要换行吗？
 
   profileMode:
-    enabled: true
+    enabled: false
     title: PaperMod
     imageUrl: "#"
     imageTitle: my image
