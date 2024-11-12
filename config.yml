@@ -1,5 +1,5 @@
 baseURL: "https://laoaaa.github.io/hugo"
-title: "laoa-lab"
+title: "untitled"
 theme: [PaperMod]
 languageCode: 'en'
 
@@ -21,13 +21,13 @@ minify:
 
 menu:
   main:
-    - name: Archives
-      url: archives
+    - name: universe
+      url: archives/
       weight: 5
-    - name: Search
+    - name: peace
       url: search/
       weight: 10
-    - name: Tags
+    - # name: Tags
       url: tags/
       weight: 15
     - # name: about
@@ -71,10 +71,10 @@ params:
     Content: 
 
   profileMode:
-    enabled: true
-    title: 
-    imageUrl: "content/posts/pic/WechatIMG427.png"
-    imageTitle: 
+    enabled: false
+    title: +
+    imageUrl: "+"
+    imageTitle: +
     # imageWidth: 120
     # imageHeight: 120
     buttons:
