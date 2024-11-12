@@ -1,5 +1,5 @@
-baseURL: https://laoaaa.github.io/hugo
-title: 加了个U
+baseURL: "https://laoaaa.github.io/hugo"
+title: "加了个U"
 theme: [PaperMod]
 languageCode: 'en'
 
@@ -69,7 +69,7 @@ params:
   homeInfoParams:
     Title: "加了个U"
     Content: >
-    一定要换行吗？
+    "一定要换行吗？"
 
   profileMode:
     enabled: false
