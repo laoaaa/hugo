@@ -12,9 +12,12 @@
 #### 创建 github 账号
 首先，注册自己的 github 账号，过程略。注册过程中，你设置的账户名 username，通常就是最终的网站地址 username.github.io，当然以后也可以把自己的域名映射到上面。
 
-架设自己的 blog 项目
+#### 架设自己的 blog 项目
+
 注册并登入账号后，进入项目：
+
 https://github.com/fivestone/hugo-papermod-beginning
+
 点击 Fork，将这个模板复制到你自己的账号下。
 
 ![](https://blog.fivest.one/wp-content/uploads/20241111-01.jpg)
