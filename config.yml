@@ -21,13 +21,13 @@ minify:
 
 menu:
   main:
-    - name: universe
-      url: archives/
+    - # name: 
+      url: archive
       weight: 5
-    - name: peace
+    - name: universe
       url: search/
       weight: 10
-    - # name: Tags
+    - name: peace
       url: tags/
       weight: 15
     - # name: about
