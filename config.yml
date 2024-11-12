@@ -1,5 +1,5 @@
-baseURL: "https://laoaaa.github.io/hugo"
-title: "加了个U"
+baseURL: https://laoaaa.github.io/hugo
+title: 加了个U
 theme: [PaperMod]
 languageCode: 'en'
 
@@ -67,12 +67,11 @@ params:
   ShowLastMod: false #显示文章更新时间
 
   homeInfoParams:
-    Title: "加了个U"
-    Content: >
-    "一定要换行吗？"
+    Title: 加了个U
+    Content: 一定要换行吗？
 
   profileMode:
-    enabled: false
+    enabled: true
     title: PaperMod
     imageUrl: "#"
     imageTitle: my image
