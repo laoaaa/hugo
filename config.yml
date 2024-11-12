@@ -1,5 +1,5 @@
 baseURL: "https://laoaaa.github.io/hugo"
-title: "加了个U"
+title: "laoa-lab"
 theme: [PaperMod]
 languageCode: 'en'
 
@@ -21,7 +21,7 @@ minify:
 
 menu:
   main:
-    - name: Archive
+    - name: Archives
       url: archives
       weight: 5
     - name: Search
@@ -63,25 +63,25 @@ params:
   ShowToc: false # 显示目录
   TocOpen: false # 自动展开目录
   ShowFullTextinRSS: false # RSS 显示全文
-  hideFooter: false # 隐藏页脚
+  hideFooter: true # 隐藏页脚
   ShowLastMod: false #显示文章更新时间
 
   homeInfoParams:
-    Title: 确实很方便
-    Content: md也很轻
+    Title: 
+    Content: 
 
   profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
+    enabled: true
+    title: 
+    imageUrl: "content/posts/pic/WechatIMG427.png"
+    imageTitle: 
     # imageWidth: 120
     # imageHeight: 120
     buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+      - name: 
+        url: 
+      - name: 
+        url: 
 
   assets:
     disableHLJS: true
