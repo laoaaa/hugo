@@ -21,7 +21,7 @@ minify:
 
 menu:
   main:
-    - # name: Archive
+    - name: Archive
       url: archives
       weight: 5
     - name: Search
