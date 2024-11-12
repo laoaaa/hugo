@@ -1,5 +1,5 @@
 baseURL: "https://laoaaa.github.io/hugo"
-title: "untitled"
+title: "UNTITLED"
 theme: [PaperMod]
 languageCode: 'en'
 
@@ -67,8 +67,8 @@ params:
   ShowLastMod: false #显示文章更新时间
 
   homeInfoParams:
-    Title: 
-    Content: the mind-hole expands
+    Title: a mind-hole expands
+    Content: 
 
   profileMode:
     enabled: false
