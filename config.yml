@@ -1,4 +1,4 @@
-baseURL: "https://fivestone.github.io/hugo-papermod-beginning"
+baseURL: https://fivestone.github.io/hugo-papermod-beginning
 title: 新的 Hugo 站点 # 网站标题
 theme: [PaperMod]
 languageCode: 'en'
@@ -45,7 +45,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "这是一个干净的 Hugo 网站的模板"
+  description: 
   author: somebody
 
   defaultTheme: auto
@@ -69,9 +69,7 @@ params:
   homeInfoParams:
     Title: "一个空的 hugo 站点"
     Content: >
-      这些文字可以在 config.yml 文件里更改。</br>
-      支持一些简单的 html 和 markdown。</br>
-      详细内容见[教程](posts/start-tutorial)。
+      这些文字可以在 config.yml 文件里更改。
 
   profileMode:
     enabled: false
@@ -85,8 +83,6 @@ params:
         url: archives
       - name: Tags
         url: tags
-
-
 
   assets:
     disableHLJS: true
