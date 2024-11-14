@@ -27,13 +27,13 @@ menu:
     - name: universe
       url: search/
       weight: 10
-    - name: peace
+    - # name: 
       url: tags/
       weight: 15
     - # name: about
       url: about/
       weight: 20
-    - # name: RSS
+    - name: peace
       url: index.xml
       weight: 25
 
@@ -50,21 +50,21 @@ params:
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: false
+  ShowShareButtons: true
   ShowReadingTime: false
   # disableSpecial1stPost: true
   displayFullLangName: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
+  ShowCodeCopyButtons: false
   ShowRssButtonInSectionTermList: false
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  ShowToc: false # 显示目录
-  TocOpen: false # 自动展开目录
+  ShowToc: true # 显示目录
+  TocOpen: true # 自动展开目录
   ShowFullTextinRSS: false # RSS 显示全文
   hideFooter: true # 隐藏页脚
-  ShowLastMod: false #显示文章更新时间
+  ShowLastMod: true #显示文章更新时间
 
   homeInfoParams:
     Title: a mind-hole expands
