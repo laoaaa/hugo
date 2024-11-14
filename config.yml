@@ -34,8 +34,11 @@ menu:
       url: about/
       weight: 20
     - name: peace
+      url: “https://tools.burnman.net/”
+      weight: 25  
+    - # name: peace
       url: index.xml
-      weight: 25
+      weight: 30
 
 outputs:
   home:
