@@ -62,7 +62,7 @@ params:
   ShowPageNums: true
   ShowToc: true # 显示目录
   TocOpen: true # 自动展开目录
-  ShowFullTextinRSS: false # RSS 显示全文
+  ShowFullTextinRSS: true # RSS 显示全文
   hideFooter: true # 隐藏页脚
   ShowLastMod: true #显示文章更新时间
 
